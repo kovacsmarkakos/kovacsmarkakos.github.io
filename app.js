@@ -1,17 +1,17 @@
 let logo = document.querySelector('#logo');
 
-  var tl = anime.timeline({
-    easing: 'easeOutExpo',
-    duration: 700
-  });
+var tl = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 700
+});
 
-  tl
+tl
   .add({
     targets: '.path',
     opacity: [0, 1],
     translateY: ["5rem", "0rem"],
     scale: [.75, 1],
-    delay: anime.stagger(80, {start: 800}),
+    delay: anime.stagger(80, { start: 800 }),
     direction: 'forwards',
   })
   .add({
@@ -25,10 +25,10 @@ let logo = document.querySelector('#logo');
 
 let hammerAnimation = anime({
   targets: '#hammer',
-    rotate: 360,
-    duration: 800,
-    autoplay: false,
-    easing: 'easeOutBack',
+  rotate: 360,
+  duration: 800,
+  autoplay: false,
+  easing: 'easeOutBack',
 });
 
-logo.addEventListener('click', function() { hammerAnimation.play(); });
+logo.addEventListener('click', function () { hammerAnimation.play(); });
