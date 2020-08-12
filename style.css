@@ -1,0 +1,37 @@
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.path {
+  fill: #1d1d1f;
+}
+
+#logo {
+  cursor: pointer;
+  max-width: 80vw;
+}
+
+#hammer {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#github-logo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  fill: #1d1d1f;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#github-logo:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
